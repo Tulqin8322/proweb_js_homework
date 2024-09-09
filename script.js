@@ -58,3 +58,55 @@ if (vaqt>=0 && vaqt<6) {
 } else {
     alert("xato kiritdingiz")
 }
+
+
+switch (vaqt) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+
+    if(vaqt>12){
+        alert("tungi soat "+(vaqt-12))
+    } else{
+        alert("tungi soat "+vaqt)
+    }
+        break;
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    alert("ertalabki soat "+vaqt);
+        break;
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    let vaqt2=vaqt-12;
+    if(vaqt>12){
+        alert("tushki soat "+vaqt2)
+    } else{
+        alert("tushki soat "+vaqt)
+    }
+        break;
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    let vaqt3=vaqt-12;
+    alert("kechki soat "+vaqt3);
+        break;
+
+    default:
+    alert("xato kiritdingiz");    
+    break;
+}
